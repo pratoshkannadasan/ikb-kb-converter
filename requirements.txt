@@ -1,0 +1,23 @@
+# Core dependencies for document conversion pipeline
+python-docx==0.8.11          # Word document processing
+openai>=1.97.1               # OpenAI API integration (fixed proxy compatibility)
+python-dotenv==1.0.0         # Environment variable management
+pathlib2==2.3.7              # Enhanced path operations (Python 3.8+ compatibility)
+
+# PDF processing dependencies
+PyPDF2==3.0.1                # PDF text extraction and metadata
+pdfplumber==0.11.4           # Advanced PDF processing and table extraction
+
+# Utility dependencies
+colorama==0.4.6              # Colored terminal output
+tqdm==4.66.1                 # Progress bars for batch processing
+
+# Optional dependencies for enhanced functionality
+markdown==3.5.1             # Markdown processing and validation
+pyyaml==6.0.1               # YAML configuration support
+
+# Frontend-specific requirements
+# Use a newer Streamlit on Python 3.13+ so pip can install wheels instead of
+# falling back to a numpy source build on Windows.
+streamlit>=1.42,<2
+watchdog>=6.0.0
